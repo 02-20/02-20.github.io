@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Desktop</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/favicon_note_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon_note_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon_note_io/favicon-16x16.png">
+    
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: transparent;
+        }
+        .topnav button {
+            float: left;
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body bgcolor="#2B7089">
+    <div class="topnav">
+        <button onclick="goBack()"><img src="resources/icons/icon_back.png" alt="Back button" width="30" height="30"></button>
+        <button onclick="goHome()"><img src="resources/icons/icon_home.png" alt="Home button" width="30" height="30"></button>
+    </div>
+    <div class="center">
+        <img src="resources/images/image_note_1.JPG" alt="Note Image 1" width="70%">
+        <img src="resources/images/image_note_2.JPG" alt="Note Image 2" width="70%">
+        <img src="resources/images/image_note_3.JPG" alt="Note Image 3" width="70%">
+        <img src="resources/images/image_note_4.JPG" alt="Note Image 4" width="70%">
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goHome() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

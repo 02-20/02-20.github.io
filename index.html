@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Desktop</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/favicon_desktop_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon_desktop_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon_desktop_io/favicon-16x16.png">
+    <style>
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: transparent;
+        }
+        .topnav button {
+            float: left;
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body bgcolor="#2B7089">
+    <div class="topnav">
+        <button onclick="goBack()"><img src="resources/icons/icon_back.png" alt="Back button" width="30" height="30"></button>
+        <button onclick="goHome()"><img src="resources/icons/icon_home.png" alt="Home button" width="30" height="30"></button>
+    </div>
+    <div class="center">
+        <a href="dir_toh.html">
+            <img src="resources/icons/icon_dir1.png" alt="A Taste of Honey Folder Icon" width="100" height="100">
+        </a>
+        <a href="dir_tg.html">
+            <img src="resources/icons/icon_dir2.png" alt="Top Girls Folder Icon" width="100" height="100">
+        </a>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goHome() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
